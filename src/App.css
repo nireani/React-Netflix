@@ -1,38 +1,136 @@
-.App {
+body{
+  background-color: black;
+  font-family: 'Bebas Neue', cursive;
+}
+.LandingHeader{
+  color: red;
+  font-size: 3em;
+  margin-left: 70vw;
+}
+
+a{
+  color:black
+
+}
+.whiteLink{
+  color: azure;
+}
+.CatalogTitle{
+  color: azure;
+}
+
+.rentedContainer{
+  color: azure;
+}
+
+.Nir{
+  margin-top: 30vh;
+  background-color: rgba(0, 255, 213, 0.76);
+  display: inline-block;
+  height: 20vh;
+  width: 20vw;
+  border-radius: 10px;
   text-align: center;
+
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.Yam{
+  display: inline-block;
+  margin-left: 20vw;
+  background-color: rgb(207, 205, 75);
+  height: 20vh;
+  width: 20vw;
+  margin-right: 1vw;
+  border-radius: 10px;
+  text-align: center;
+
+
+
+}
+.Vio{
+  display: inline-block;
+  margin-right: 1vw;
+  background-color: rgb(196, 77, 77);
+  height: 20vh;
+  width: 20vw;
+  text-align: center;
+  border-radius: 10px;
+
+  
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Nir:active{
+  height: 18.5vh;
+  width: 18.5vw;
+
+}
+.Vio:active{
+  height: 18.5vh;
+  width: 18.5vw;
+
+}
+.Yam:active{
+  height: 18.5vh;
+  width: 18.5vw;
+
+}
+p{
+  margin-top: 20%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.detailsPic{
+  width: 40%;
+  height: 30vh;
+  margin-left: 30vw;
+
+}
+.title{
+  margin-bottom: 20px;
+color: azure;
+text-align: center;
+
 }
 
-.App-link {
-  color: #61dafb;
+.descrShort{
+  text-align: left;
+color: azure;
+margin-left: 30vw;
+margin-right: 30vw;
+margin-top: 20px;
+font-family: Sans-Serif;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CatalogMoviePic{
+width: 23vw;
+height: 40vh;
+margin-top: 10px;
+margin-left: 10px;
+border-radius: 10px;
+}
+
+
+.CatalogMoviePicContainer{
+  display: inline-block;
+
+}
+
+.rentIcon{
+  position: absolute;
+  margin-top: 3vh;
+  margin-left: 21vw;
+}
+.infoIcon{
+  position: absolute;
+  margin-top: 3vh;
+  margin-left: 2vw;
+}
+
+.catalog{
+vertical-align: text-top;
+  margin-left: 2vw;
+  font-size: 1.25em;
 }
