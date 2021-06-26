@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 class Movie extends Component {
 
     handleRent=()=>{
-this.props.handleRent(this.props.id,this.props.rent)
+this.props.handleRent(this.props.id,this.props.rent,this.props.user)
     }
 
     render() {
@@ -16,7 +16,7 @@ this.props.handleRent(this.props.id,this.props.rent)
             <div className="CatalogMoviePicContainer">
                
                 <div className="imgContainer">
-                <Link to={`/MovieDetails/${this.props.id}`} ><div className="infoIcon"> <FontAwesomeIcon  icon={faInfoCircle} color="white" /></div></Link>
+                <Link to={`/MovieDetails/${this.props.user}/${this.props.id}`} ><div className="infoIcon"> <FontAwesomeIcon  icon={faInfoCircle} color="white" /></div></Link>
 
                    <div onClick={this.handleRent} className="rentIcon">{this.props.rent?<FontAwesomeIcon icon={faMinusCircle} color="white" />:<FontAwesomeIcon icon={faPlusCircle} color="white" />}</div>
                    <div><img  className="CatalogMoviePic" alt="Movie Pic"src={this.props.img}></img></div>

@@ -15,7 +15,7 @@ class Landing extends Component {
         return (
             <div>
             <div className="usersContainer">
-               {this.state.users.map(u =><Link to="/Catalog"> <div className={u.name}key={u.name}><p key={u.name}>{u.name}</p></div></Link>)}                                                 
+               {this.state.users.map(u =><Link to={`/Catalog/${u.name}`}> <div className={u.name}key={u.name}><p key={u.name}>{u.name}</p></div></Link>)}                                                 
             </div>
             </div>
         );
